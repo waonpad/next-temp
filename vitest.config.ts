@@ -1,4 +1,4 @@
-import path from "node:path";
+import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vitest/config";
 
@@ -10,8 +10,8 @@ export default defineConfig({
     environment: "happy-dom",
     include: ["src/**/*.test.{js,ts,jsx,tsx}"],
     alias: {
-      "@": path.resolve(__dirname, "./src"),
+      "@": resolve(__dirname, "./src"),
     },
-    setupFiles: ["src/test/setup-tests.ts"],
+    setupFiles: ["src/testing/setup.ts"],
   },
 });

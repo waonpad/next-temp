@@ -1,6 +1,8 @@
 import "@testing-library/jest-dom/vitest";
 
 import { loadEnvConfig } from "@next/env";
+import { cleanup } from "@testing-library/react";
+import { afterEach } from "vitest";
 
 /**
  * @description
@@ -11,3 +13,7 @@ export const setupEnv = async (): Promise<void> => {
 };
 
 setupEnv();
+
+afterEach(() => {
+  cleanup();
+});

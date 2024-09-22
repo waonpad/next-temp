@@ -1,4 +1,4 @@
-import { clientEnv } from "@/constants/env";
+import { clientEnv } from "@/config/env";
 import type { NoLeadingSlash } from "@/types";
 
 export const hostApi = <T extends string>(path: NoLeadingSlash<T>) => {

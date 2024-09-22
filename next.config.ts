@@ -17,6 +17,7 @@ const nextConfig = (
   },
   experimental: {
     typedRoutes: true,
+    reactCompiler: true,
   },
   pageExtensions: ["ts", "tsx", "js", "jsx"].flatMap((extension) => {
     const isDevServer = phase === PHASE_DEVELOPMENT_SERVER;

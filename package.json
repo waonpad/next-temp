@@ -31,6 +31,7 @@
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "@vitejs/plugin-react": "^4.3.1",
+    "babel-plugin-react-compiler": "^0.0.0-experimental-6067d4e-20240919",
     "happy-dom": "^14.12.3",
     "lefthook": "^1.7.15",
     "postcss": "^8",

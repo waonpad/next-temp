@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import { clientEnv } from "@/config/env";
+import { clientEnv } from "@/config/env/client";
 import { AppProvider } from "@/providers/app-provider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";

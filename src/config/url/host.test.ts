@@ -1,4 +1,4 @@
-import { clientEnv } from "@/config/env";
+import { clientEnv } from "@/config/env/client";
 import { describe, expect, it } from "vitest";
 import { host } from "./host";
 

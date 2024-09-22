@@ -1,4 +1,4 @@
-import { clientEnv } from "@/config/env";
+import { clientEnv } from "@/config/env/client";
 import type { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {

@@ -6,7 +6,7 @@
         "name": "next"
       }
     ],
-    "target": "ES2017"
+    "target": "ESNext"
   },
   "exclude": [
     "node_modules",

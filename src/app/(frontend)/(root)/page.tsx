@@ -1,10 +1,6 @@
-import type { Metadata } from "next";
+// import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  alternates: {
-    canonical: "/",
-  },
-};
+// export const metadata: Metadata = {};
 
 export default async function Page() {
   return (

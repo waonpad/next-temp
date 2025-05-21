@@ -9,7 +9,9 @@ import { useState } from "react";
 export const useWatchUnhandledError = () => {
   const [error, setError] = useState<Error | null>(null);
 
-  if (error) throw error;
+  if (error) {
+    throw error;
+  }
 
   useWindowEvent(
     "error",

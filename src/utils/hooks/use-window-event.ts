@@ -13,6 +13,7 @@ export const useWindowEvent = <K extends keyof WindowEventMap>(
   useEffect(() => {
     if (window) {
       window.addEventListener(type, memoizedListener, options);
+
       return () => {
         window.removeEventListener(type, memoizedListener, options);
       };

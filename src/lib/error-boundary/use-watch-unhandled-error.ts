@@ -1,7 +1,7 @@
 "use client";
 
-import { useWindowEvent } from "@/utils/hooks/use-window-event";
 import { useState } from "react";
+import { useWindowEvent } from "@/utils/hooks/use-window-event";
 
 /**
  * 拾い忘れたエラー, 非同期処理, イベントハンドラ内のエラーをキャッチする

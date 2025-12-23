@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
-import { clientEnv } from "@/config/env/client";
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
+import { clientEnv } from "@/config/env/client";
 
 export const metadata: Metadata = {
   title: {

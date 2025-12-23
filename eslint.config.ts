@@ -1,4 +1,4 @@
-import stylisticJs from "@stylistic/eslint-plugin-js";
+import stylisticJs from "@stylistic/eslint-plugin";
 import type { Linter } from "eslint";
 import { defineConfig } from "eslint/config";
 import sonarjs from "eslint-plugin-sonarjs";

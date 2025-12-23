@@ -1,7 +1,11 @@
 {
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "organizeImports": {
-    "enabled": true
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   },
   "formatter": {
     "enabled": true,
@@ -10,8 +14,14 @@
   },
   "linter": {
     "enabled": true,
+    "domains": {
+      "next": "all",
+      "react": "all",
+      "test": "all",
+      "project": "all"
+    },
     "rules": {
-      "all": true,
+      "recommended": true,
       "correctness": {
         "noNodejsModules": "off",
         "useImportExtensions": "off",
@@ -26,7 +36,6 @@
       },
       "suspicious": {
         "noConsole": "off",
-        "noConsoleLog": "off",
         "noReactSpecificProps": "off"
       },
       "nursery": {
@@ -39,6 +48,6 @@
     }
   },
   "files": {
-    "ignore": ["**/node_modules/**", "**/*.json", ".next/**", "out/**"]
+    "includes": ["**", "!**/node_modules", "!**/.next", "!**/out"]
   }
 }

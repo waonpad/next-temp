@@ -1,7 +1,7 @@
 import stylisticJs from "@stylistic/eslint-plugin-js";
 import type { Linter } from "eslint";
-import sonarjs from "eslint-plugin-sonarjs";
 import { defineConfig } from "eslint/config";
+import sonarjs from "eslint-plugin-sonarjs";
 import tseslint from "typescript-eslint";
 
 export default defineConfig([
@@ -9,7 +9,6 @@ export default defineConfig([
   { ignores: [".next/**", "out/**"] },
   // 適用するファイルを指定
   { files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"] },
-  // @ts-ignore
   tseslint.configs.base,
   {
     plugins: { sonarjs },
